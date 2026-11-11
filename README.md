@@ -1,14 +1,14 @@
 # Anollian Mushi
 
-Software developer in Arusha, Tanzania. I build business systems in Laravel and Python, and I design and host websites.
+Software developer in Arusha, Tanzania. I replace spreadsheets, paper forms and manual approvals with web systems teams actually use, and I design, build and host websites.
 
 **Website:** [anollian-mushi.github.io/portifolio](https://anollian-mushi.github.io/portifolio/)
 
 ## About me
 
-I'm studying for a Diploma in Computer Engineering at Mbeya University of Science and Technology (MUST) and expect to finish in July 2027. Most of what I build is software that businesses use every day: inventory tracking, invoicing, and approval workflows where a department head signs off on a request inside the system instead of on paper.
+I'm finishing a Diploma in Computer Engineering at Mbeya University of Science and Technology (MUST), due July 2027, but most of what I know comes from building for real companies. The work I like best is taking a process that lives on paper or in a spreadsheet and turning it into a system: inventory tracking, invoicing, approvals.
 
-I'm open to remote developer roles, internships and freelance projects.
+I'm taking on freelance projects and open to remote roles and internships.
 
 ## Experience
 
@@ -18,7 +18,7 @@ I'm open to remote developer roles, internships and freelance projects.
 | Nyika Essence Safaris | Web Developer & Systems Consultant | Nov 2025 – present |
 | Vision Fund Tanzania | Software Development Trainee | Jul – Sep 2025 |
 
-At Flex I built HireFlow and a transaction module in Laravel and wrote the documentation for three systems. For Nyika Essence Safaris I built and launched [nyikaessence.com](https://nyikaessence.com), plus an invoice and delivery note system that turns Excel/CSV uploads into documents and cut their manual entry time by over 80%. At Vision Fund I built an inventory management system with an approval workflow for department heads.
+For Nyika Essence Safaris I built and launched [nyikaessence.com](https://nyikaessence.com) and an invoice and delivery note system that turns an Excel or CSV upload into finished documents. Their manual entry time dropped by more than 80%, and I still look after both. At Flex I built HireFlow and the transaction module in Laravel and wrote the documentation for three systems. At Vision Fund I took item tracking and department requests off paper with an inventory system and an approval workflow for department heads.
 
 ## Selected projects
 
