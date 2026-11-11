@@ -1,14 +1,16 @@
-# Portfolio
+# Anollian Mushi · Portfolio
 
-My personal website: who I am, projects I've built, the languages and tools I use, and how to reach me.
+My personal website. I'm a software developer in Arusha, Tanzania, studying Computer Engineering at MUST. I build business systems in Laravel and Python and do web design and hosting. The site covers my work experience, projects, skills, and how to reach me.
 
 It's plain HTML, CSS and a little JavaScript. No framework and no build step, so it runs straight from the files and GitHub Pages can host it for free.
 
 ## What's on the site
 
-- **About:** a short intro and a few quick facts (location, focus, availability)
-- **Projects:** one card per project with a description, tech tags, and links to the code and live demo
-- **Skills:** grouped into languages, frameworks and tools
+- **About:** who I am, what I build, and what kind of work I'm looking for
+- **Experience:** Flex Corporate Services, Nyika Essence Safaris and Vision Fund Tanzania
+- **Projects:** Sala Za Kikatoliki (Android, 1,000+ downloads on Google Play), an inventory and asset management system in Laravel, the Nyika Essence Safaris website, an invoice and delivery note system, and a hotel management system
+- **Skills:** languages, frameworks, tools, systems and remote-work tools
+- **Education & certifications:** Diploma in Computer Engineering at MUST, and an Advanced Excel certificate
 - **Contact:** email, GitHub and LinkedIn
 
 It also has a dark mode that follows your system setting (with a toggle that remembers your choice) and a collapsible menu on phones.
@@ -34,20 +36,13 @@ python3 -m http.server 8000
 # then visit http://localhost:8000
 ```
 
-## Making it yours
+## Updating the content
 
-Everything you need to change is in `index.html`. Search for these placeholders:
+All the text is in `index.html`, one `<section>` per part of the page.
 
-| Placeholder | Replace with |
-| --- | --- |
-| `Your Name` / `YN` | your name and initials (also in `assets/favicon.svg`) |
-| The tagline under your name | one line on what you do |
-| About paragraphs and facts | your background and what you're looking for |
-| `Project One`, `Two`, `Three` | your real projects |
-| `you@example.com` | your email |
-| LinkedIn link | your profile URL |
-
-To add a project, copy one `<article class="card">…</article>` block inside the Projects section and edit it. To add a skill, add another `<li>` to the right list.
+- **New job:** copy a `<li class="job">…</li>` block at the top of the Experience list.
+- **New project:** copy an `<article class="card">…</article>` block in the Projects section. Leave out the "Code" link if the repository is private.
+- **New skill:** add an `<li>` to the right list in the Skills section.
 
 The accent colour is `--accent` near the top of `style.css`. There's one value for light mode and one for dark mode.
 

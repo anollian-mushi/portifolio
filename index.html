@@ -3,20 +3,21 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name · Portfolio</title>
-  <meta name="description" content="Personal website of Your Name: projects, skills and contact details.">
+  <title>Anollian Mushi · Software Developer</title>
+  <meta name="description" content="Anollian Mushi, software developer in Arusha, Tanzania. Laravel and Python business systems, web design and hosting, and an Android app with 1,000+ downloads.">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
     <nav class="nav container" aria-label="Main">
-      <a class="brand" href="#top">YN<span>.</span></a>
+      <a class="brand" href="#top">AM<span>.</span></a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
         <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -34,8 +35,11 @@
     <!-- HERO -->
     <section class="hero container">
       <p class="eyebrow">Hi, I'm</p>
-      <h1>Your Name</h1>
-      <p class="tagline">Software developer. I build web apps and the backends behind them.</p>
+      <h1>Anollian Mushi</h1>
+      <p class="tagline">
+        Software developer in Arusha, Tanzania. I build business systems in Laravel and Python,
+        and design and host websites.
+      </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#projects">See my work</a>
         <a class="btn" href="#contact">Get in touch</a>
@@ -48,57 +52,146 @@
       <div class="about-grid">
         <div class="about-text">
           <p>
-            Replace this with a few sentences about yourself: where you're based, what you're
-            studying or working on, and the kind of problems you like to solve.
+            I'm a Computer Engineering diploma student at Mbeya University of Science and Technology.
+            Most of what I build is software that businesses use every day: inventory tracking,
+            invoicing, and approval workflows where a department head signs off on a request inside
+            the system instead of on paper.
           </p>
           <p>
-            A second short paragraph works well for what you're looking for right now,
-            such as internships, freelance work or collaborators.
+            I've done field placements at Vision Fund Tanzania and Flex Corporate Services, and I
+            built and run the website for Nyika Essence Safaris. On the side I made
+            <a href="#projects">Sala Za Kikatoliki</a>, a Catholic prayer app on Google Play with
+            more than 1,000 downloads.
+          </p>
+          <p>
+            I work on macOS and Linux, and I'm used to working remotely over Zoom, Google Meet,
+            Microsoft Teams and Slack. I'm looking for remote developer roles, internships and
+            freelance projects.
           </p>
         </div>
         <ul class="facts">
-          <li><strong>Location</strong><span>City, Country</span></li>
-          <li><strong>Focus</strong><span>Web development</span></li>
-          <li><strong>Currently</strong><span>Open to opportunities</span></li>
+          <li><strong>Location</strong><span>Arusha, Tanzania</span></li>
+          <li><strong>Focus</strong><span>Laravel &amp; Python, web design and hosting</span></li>
+          <li><strong>Studying</strong><span>Diploma in Computer Engineering, MUST (expected July 2027)</span></li>
+          <li><strong>Open to</strong><span>Remote roles, internships, freelance</span></li>
         </ul>
       </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2>Experience</h2>
+      <ol class="timeline">
+        <li class="job">
+          <div class="job-head">
+            <h3>Flex Corporate Services</h3>
+            <span class="job-date">Aug 2026 – Oct 2026</span>
+          </div>
+          <p class="job-role">Field Student, Software Development</p>
+          <ul>
+            <li>Spent just over two months doing Laravel development full time.</li>
+            <li>Built HireFlow and the transaction module.</li>
+            <li>Wrote the system documentation for three systems.</li>
+          </ul>
+        </li>
+        <li class="job">
+          <div class="job-head">
+            <h3>Nyika Essence Safaris</h3>
+            <span class="job-date">Nov 2025 – Present</span>
+          </div>
+          <p class="job-role">Web Developer &amp; Systems Consultant</p>
+          <ul>
+            <li>Built and launched the company website, <a href="https://nyikaessence.com" target="_blank" rel="noopener">nyikaessence.com</a>.</li>
+            <li>Built an invoice and delivery note system that generates documents from Excel/CSV uploads, cutting manual entry time by over 80%.</li>
+          </ul>
+        </li>
+        <li class="job">
+          <div class="job-head">
+            <h3>Vision Fund Tanzania</h3>
+            <span class="job-date">Jul 2025 – Sep 2025</span>
+          </div>
+          <p class="job-role">Software Development Trainee</p>
+          <ul>
+            <li>Designed and built an inventory management system to track items and departmental requests digitally.</li>
+            <li>Added an approval workflow so department heads can review and authorise requests in the system.</li>
+            <li>Worked with the IT team on system security and data integrity.</li>
+          </ul>
+        </li>
+      </ol>
     </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section container">
       <h2>Projects</h2>
-      <p class="section-intro">A few things I've built. Each card links to the code and, where there is one, a live demo.</p>
+      <p class="section-intro">Things I've built for clients, employers and myself.</p>
 
       <div class="projects">
-        <!-- Copy one <article> block per project -->
         <article class="card">
-          <h3>Project One</h3>
-          <p>One or two sentences on what it does and who it's for. Mention the problem it solves.</p>
-          <ul class="tags"><li>React</li><li>FastAPI</li><li>PostgreSQL</li></ul>
+          <h3>Sala Za Kikatoliki</h3>
+          <p>
+            Catholic prayers in Swahili and English, available offline. Written in HTML, CSS and
+            JavaScript and packaged as a native Android app with Capacitor. 1,000+ downloads on
+            Google Play. The latest update brought a new interface, easier navigation and daily
+            notifications.
+          </p>
+          <ul class="tags"><li>JavaScript</li><li>Capacitor</li><li>Android</li></ul>
           <div class="card-links">
-            <a href="https://github.com/anollian-mushi" target="_blank" rel="noopener">Code</a>
-            <a href="#" target="_blank" rel="noopener">Live demo</a>
+            <a href="https://play.google.com/store/apps/details?id=com.salazakikatoliki.oraetlabora" target="_blank" rel="noopener">Google Play</a>
+            <a href="https://github.com/anollian-mushi/sala-za-kikatoliki" target="_blank" rel="noopener">Code</a>
           </div>
         </article>
 
         <article class="card">
-          <h3>Project Two</h3>
-          <p>Describe what you built and the part you're proudest of, like a tricky feature or a design decision.</p>
-          <ul class="tags"><li>Python</li><li>Docker</li></ul>
+          <h3>Inventory &amp; Asset Management System</h3>
+          <p>
+            Laravel system for tracking stock and company assets. Users get different permissions
+            by role, and requests go through an approval step before stock moves.
+          </p>
+          <ul class="tags"><li>Laravel</li><li>PHP</li><li>MySQL</li></ul>
           <div class="card-links">
-            <a href="https://github.com/anollian-mushi" target="_blank" rel="noopener">Code</a>
+            <a href="https://github.com/anollian-mushi/AnoDomino-inventory-system" target="_blank" rel="noopener">Code</a>
           </div>
         </article>
 
         <article class="card">
-          <h3>Project Three</h3>
-          <p>School assignments, hackathon entries and side projects all count. Pick the ones you can talk about.</p>
-          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <h3>Nyika Essence Safaris website</h3>
+          <p>
+            The official website for a safari company in Tanzania. I designed, built and launched
+            it, and I host and maintain it.
+          </p>
+          <ul class="tags"><li>Web design</li><li>Hosting</li></ul>
           <div class="card-links">
-            <a href="https://github.com/anollian-mushi" target="_blank" rel="noopener">Code</a>
+            <a href="https://nyikaessence.com" target="_blank" rel="noopener">Visit site</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Invoice &amp; Delivery Note System</h3>
+          <p>
+            Web app built in Python for Tuponi Investment that generates invoices and delivery notes,
+            replacing documents that used to be filled in by hand.
+          </p>
+          <ul class="tags"><li>Python</li></ul>
+          <div class="card-links">
+            <span class="muted-note">Client project</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Hotel Management System</h3>
+          <p>A hotel management system written in PHP. The source code is public on GitHub.</p>
+          <ul class="tags"><li>PHP</li><li>MySQL</li></ul>
+          <div class="card-links">
+            <a href="https://github.com/anollian-mushi/hotel" target="_blank" rel="noopener">Code</a>
           </div>
         </article>
       </div>
+
+      <p class="more-note">
+        Some of my code lives in private repositories, including a pharmacy system and the AnoTrade
+        trading bot, both in Python. I'm happy to walk through either on a call.
+        Everything public is on <a href="https://github.com/anollian-mushi" target="_blank" rel="noopener">GitHub</a>.
+      </p>
     </section>
 
     <!-- SKILLS -->
@@ -107,15 +200,42 @@
       <div class="skills">
         <div class="skill-group">
           <h3>Languages</h3>
-          <ul class="tags"><li>Python</li><li>JavaScript</li><li>TypeScript</li><li>SQL</li><li>HTML &amp; CSS</li></ul>
+          <ul class="tags"><li>PHP</li><li>Python</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li></ul>
         </div>
         <div class="skill-group">
-          <h3>Frameworks</h3>
-          <ul class="tags"><li>React</li><li>FastAPI</li><li>Node.js</li></ul>
+          <h3>Frameworks &amp; CMS</h3>
+          <ul class="tags"><li>Laravel</li><li>WordPress</li><li>Capacitor</li></ul>
         </div>
         <div class="skill-group">
-          <h3>Tools</h3>
-          <ul class="tags"><li>Git &amp; GitHub</li><li>Docker</li><li>PostgreSQL</li><li>Linux</li></ul>
+          <h3>Tools &amp; databases</h3>
+          <ul class="tags"><li>Git &amp; GitHub</li><li>MySQL</li><li>Advanced Excel</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Systems</h3>
+          <ul class="tags"><li>macOS</li><li>Linux</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Remote work</h3>
+          <ul class="tags"><li>Zoom</li><li>Google Meet</li><li>Microsoft Teams</li><li>Slack</li></ul>
+        </div>
+        <div class="skill-group">
+          <h3>Documentation</h3>
+          <ul class="tags"><li>System documentation</li><li>Technical writing</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section container">
+      <h2>Education &amp; certifications</h2>
+      <div class="edu">
+        <div class="edu-item">
+          <h3>Diploma in Computer Engineering</h3>
+          <p>Mbeya University of Science and Technology (MUST) · Expected July 2027</p>
+        </div>
+        <div class="edu-item">
+          <h3>Advanced Excel Certification</h3>
+          <p>Silabu</p>
         </div>
       </div>
     </section>
@@ -123,18 +243,21 @@
     <!-- CONTACT -->
     <section id="contact" class="section container contact">
       <h2>Contact</h2>
-      <p>The quickest way to reach me is by email. I'm also on GitHub and LinkedIn.</p>
+      <p>
+        Email is the quickest way to reach me. If you have a role, an internship or a project in
+        mind, tell me a bit about it and I'll get back to you.
+      </p>
       <div class="contact-links">
-        <a class="btn btn-primary" href="mailto:you@example.com">you@example.com</a>
+        <a class="btn btn-primary" href="mailto:anollianmushi005@gmail.com">anollianmushi005@gmail.com</a>
         <a class="btn" href="https://github.com/anollian-mushi" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://www.linkedin.com/in/anollian-mushi-9a1375228" target="_blank" rel="noopener">LinkedIn</a>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container">
-      <p>&copy; <span id="year"></span> Your Name</p>
+      <p>&copy; <span id="year"></span> Anollian Emillian Mushi</p>
       <a href="#top">Back to top ↑</a>
     </div>
   </footer>
