@@ -48,10 +48,9 @@ The accent colour is `--accent` near the top of `style.css`. There's one value f
 
 ## Publish with GitHub Pages
 
-1. Merge this branch into `main`.
-2. In the repository, go to **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**, then pick `main` and `/ (root)`.
-4. Save. After a minute or so the site is live at `https://anollian-mushi.github.io/portifolio/`.
+1. In the repository, go to **Settings → Pages**.
+2. Under **Build and deployment**, choose **Deploy from a branch**, then pick `main` and `/ (root)`.
+3. Save. After a minute or so the site is live at `https://anollian-mushi.github.io/portifolio/`.
 
 If you later want it at `https://anollian-mushi.github.io/` with no `/portifolio` on the end, rename the repository to `anollian-mushi.github.io`.
 
