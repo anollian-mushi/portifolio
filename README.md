@@ -1,59 +1,50 @@
-# Anollian Mushi · Portfolio
+# Anollian Mushi
 
-My personal website. I'm a software developer in Arusha, Tanzania, studying Computer Engineering at MUST. I build business systems in Laravel and Python and do web design and hosting. The site covers my work experience, projects, skills, and how to reach me.
+Software developer in Arusha, Tanzania. I build business systems in Laravel and Python, and I design and host websites.
 
-It's plain HTML, CSS and a little JavaScript. No framework and no build step, so it runs straight from the files and GitHub Pages can host it for free.
+**Website:** [anollian-mushi.github.io/portifolio](https://anollian-mushi.github.io/portifolio/)
 
-## What's on the site
+## About me
 
-- **About:** who I am, what I build, and what kind of work I'm looking for
-- **Experience:** Flex Corporate Services, Nyika Essence Safaris and Vision Fund Tanzania
-- **Projects:** Sala Za Kikatoliki (Android, 1,000+ downloads on Google Play), an inventory and asset management system in Laravel, the Nyika Essence Safaris website, an invoice and delivery note system, and a hotel management system
-- **Skills:** languages, frameworks, tools, systems and remote-work tools
-- **Education & certifications:** Diploma in Computer Engineering at MUST, and an Advanced Excel certificate
-- **Contact:** email, GitHub and LinkedIn
+I'm studying for a Diploma in Computer Engineering at Mbeya University of Science and Technology (MUST) and expect to finish in July 2027. Most of what I build is software that businesses use every day: inventory tracking, invoicing, and approval workflows where a department head signs off on a request inside the system instead of on paper.
 
-It also has a dark mode that follows your system setting (with a toggle that remembers your choice) and a collapsible menu on phones.
+I'm open to remote developer roles, internships and freelance projects.
 
-## Files
+## Experience
 
-```
-index.html          page content: edit this to change text, projects and skills
-style.css           layout, colours, light and dark themes
-script.js           mobile menu, theme toggle, footer year
-assets/favicon.svg  browser tab icon
-.nojekyll           tells GitHub Pages to serve the files as they are
-```
+| Where | Role | When |
+| --- | --- | --- |
+| Flex Corporate Services | Field Student, Software Development | Aug – Oct 2026 |
+| Nyika Essence Safaris | Web Developer & Systems Consultant | Nov 2025 – present |
+| Vision Fund Tanzania | Software Development Trainee | Jul – Sep 2025 |
 
-## Run it locally
+At Flex I built HireFlow and a transaction module in Laravel and wrote the documentation for three systems. For Nyika Essence Safaris I built and launched [nyikaessence.com](https://nyikaessence.com), plus an invoice and delivery note system that turns Excel/CSV uploads into documents and cut their manual entry time by over 80%. At Vision Fund I built an inventory management system with an approval workflow for department heads.
 
-Open `index.html` in a browser. That's enough.
+## Selected projects
 
-If you'd rather have a local server (handy for testing on your phone over Wi-Fi):
+- **[Sala Za Kikatoliki](https://play.google.com/store/apps/details?id=com.salazakikatoliki.oraetlabora)**: Catholic prayers in Swahili and English that work offline. Built with HTML, CSS and JavaScript and packaged for Android with Capacitor. 1,000+ downloads on Google Play. ([code](https://github.com/anollian-mushi/sala-za-kikatoliki))
+- **[Inventory & Asset Management System](https://github.com/anollian-mushi/AnoDomino-inventory-system)**: a Laravel app with role-based access, stock tracking and approvals.
+- **[Hotel Management System](https://github.com/anollian-mushi/hotel)**: written in PHP.
+- **Invoice & Delivery Note System**: a Python web app for Tuponi Investment that generates invoices and delivery notes. Client project, code not public.
 
-```bash
-python3 -m http.server 8000
-# then visit http://localhost:8000
-```
+I also have a pharmacy system and a trading bot (AnoTrade), both in Python, in private repositories. I'm happy to walk through them on a call.
 
-## Updating the content
+## Skills
 
-All the text is in `index.html`, one `<section>` per part of the page.
+- **Languages:** PHP, Python, JavaScript, HTML5, CSS3
+- **Frameworks & CMS:** Laravel, WordPress, Capacitor
+- **Tools & databases:** Git and GitHub, MySQL, Advanced Excel (certified by Silabu)
+- **Systems:** macOS, Linux
+- **Remote work:** Zoom, Google Meet, Microsoft Teams, Slack
 
-- **New job:** copy a `<li class="job">…</li>` block at the top of the Experience list.
-- **New project:** copy an `<article class="card">…</article>` block in the Projects section. Leave out the "Code" link if the repository is private.
-- **New skill:** add an `<li>` to the right list in the Skills section.
+## Contact
 
-The accent colour is `--accent` near the top of `style.css`. There's one value for light mode and one for dark mode.
+- Email: [anollianmushi005@gmail.com](mailto:anollianmushi005@gmail.com)
+- LinkedIn: [anollian-mushi-9a1375228](https://www.linkedin.com/in/anollian-mushi-9a1375228)
+- GitHub: [@anollian-mushi](https://github.com/anollian-mushi)
 
-## Publish with GitHub Pages
+## About this repository
 
-1. In the repository, go to **Settings → Pages**.
-2. Under **Build and deployment**, choose **Deploy from a branch**, then pick `main` and `/ (root)`.
-3. Save. After a minute or so the site is live at `https://anollian-mushi.github.io/portifolio/`.
+This repository is the source code for my website. It's plain HTML, CSS and JavaScript with no framework and no build step, hosted on GitHub Pages. To look at it locally, clone the repo and open `index.html` in a browser.
 
-If you later want it at `https://anollian-mushi.github.io/` with no `/portifolio` on the end, rename the repository to `anollian-mushi.github.io`.
-
-## License
-
-The code is free to reuse under the [MIT License](LICENSE). The written content and project descriptions are mine.
+The code is under the [MIT License](LICENSE), so you can reuse the layout for your own site. Please replace my name and details with yours.
