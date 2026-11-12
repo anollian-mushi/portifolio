@@ -45,6 +45,13 @@ I also have a pharmacy system and a trading bot (AnoTrade), both in Python, in p
 
 ## About this repository
 
-This repository is the source code for my website. It's plain HTML, CSS and JavaScript with no framework and no build step, hosted on GitHub Pages. To look at it locally, clone the repo and open `index.html` in a browser.
+This repository is the source code for my website: plain HTML, CSS and JavaScript with no build step, hosted on GitHub Pages. The 3D sphere at the top is [Three.js](https://threejs.org) and the scroll animations use [GSAP](https://gsap.com) with ScrollTrigger, both loaded from a CDN.
+
+To look at it locally, clone the repo and run a small web server from the folder (the 3D part won't load from a file opened directly):
+
+```bash
+python3 -m http.server 8000
+# then open http://localhost:8000
+```
 
 The code is under the [MIT License](LICENSE), so you can reuse the layout for your own site. Please replace my name and details with yours.

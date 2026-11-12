@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Anollian Mushi · Software Developer</title>
   <meta name="description" content="I replace spreadsheets, paper forms and manual approvals with web systems your team will actually use. Laravel and Python developer in Arusha, Tanzania, working with clients remotely.">
-  <meta name="theme-color" content="#000000">
+  <meta name="theme-color" content="#0a0a0a">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Anollian Mushi · Software Developer">
   <meta property="og:description" content="Business systems, websites and Android apps. Laravel and Python developer in Arusha, Tanzania.">
@@ -13,29 +13,27 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=IBM+Plex+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap">
   <link rel="stylesheet" href="style.css">
   <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script type="importmap">
+    { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.min.js" } }
+  </script>
 </head>
 <body>
-  <!-- Intro screen (only shown when JavaScript runs) -->
+  <!-- Intro screen -->
   <div class="preloader" aria-hidden="true">
-    <div class="preloader-inner">
-      <span class="preloader-logo">AM</span>
-      <div class="preloader-bar"><span></span></div>
-    </div>
+    <span class="pl-name mono">Anollian Mushi</span>
+    <span class="pl-count">000</span>
+    <span class="pl-note mono">Software developer · Arusha</span>
   </div>
 
-  <div class="cursor-glow" aria-hidden="true"></div>
-  <div class="scroll-progress" aria-hidden="true"><span></span></div>
+  <div class="cursor" aria-hidden="true"></div>
 
-  <!-- NAV -->
-  <header class="nav-wrap">
-    <nav class="nav" aria-label="Main">
-      <a class="logo" href="#top" aria-label="Anollian Mushi, back to top">
-        <span class="logo-mark" data-scramble>AM</span>
-        <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
-      </a>
+  <!-- NAV (inverts over light and dark sections) -->
+  <header class="nav">
+    <a class="nav-logo" href="#top">Anollian Mushi</a>
+    <nav aria-label="Main">
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
@@ -43,11 +41,9 @@
         <li><a href="#projects">Work</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a class="nav-cta" href="#contact">Start a project</a>
-      <button class="menu-btn" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu">
-        <span></span><span></span>
-      </button>
     </nav>
+    <a class="nav-cta" href="#contact">Start a project ↗</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="mobile-menu">Menu</button>
   </header>
 
   <div class="mobile-menu" id="mobile-menu" hidden>
@@ -58,312 +54,260 @@
       <li><a href="#projects">Work</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
-    <a class="btn btn-primary" href="mailto:anollianmushi005@gmail.com">Email me</a>
+    <a class="mobile-mail mono" href="mailto:anollianmushi005@gmail.com">anollianmushi005@gmail.com</a>
   </div>
 
   <main id="top">
     <!-- HERO -->
-    <section class="hero">
+    <section class="hero theme-ink">
       <canvas class="hero-canvas" aria-hidden="true"></canvas>
-      <div class="orb orb-1" aria-hidden="true"></div>
-      <div class="orb orb-2" aria-hidden="true"></div>
-      <div class="hero-vignette" aria-hidden="true"></div>
 
-      <div class="container hero-inner">
-        <p class="status hero-in" style="--i:0">
-          <span class="pulse" aria-hidden="true"></span>
-          Taking on new projects · Remote
-        </p>
+      <div class="hero-top">
+        <p class="mono hero-meta">Software developer<br>Arusha, Tanzania</p>
+        <p class="mono hero-status"><span class="dot" aria-hidden="true"></span>Taking on new projects · Remote</p>
+      </div>
 
-        <h1 class="hero-title" aria-label="Anollian Mushi">
-          <span class="line hero-in" style="--i:1" aria-hidden="true"><span data-scramble>Anollian</span></span>
-          <span class="line hero-in" style="--i:2" aria-hidden="true"><span class="grad-text shimmer" data-scramble>Mushi.</span></span>
+      <div class="hero-bottom">
+        <div class="hero-row">
+          <p class="hero-sub">
+            I replace spreadsheets, paper forms and manual approvals with web systems
+            your team will <em>actually use.</em>
+          </p>
+          <div class="hero-ctas">
+            <a class="btn btn-solid magnetic" href="#projects">See the work</a>
+            <a class="btn btn-line magnetic" href="#contact">Start a project</a>
+          </div>
+        </div>
+        <h1 class="hero-name" aria-label="Anollian Mushi">
+          <span class="hero-word" aria-hidden="true">Anollian</span>
+          <span class="hero-word" aria-hidden="true">Mushi</span>
         </h1>
+      </div>
+    </section>
 
-        <p class="hero-sub hero-in" style="--i:3">
-          I replace spreadsheets, paper forms and manual approvals with web systems
-          your team will actually use. Built in Laravel and Python, from the first
-          conversation to a live, documented system.
+    <!-- STATEMENT -->
+    <section id="about" class="statement theme-ink">
+      <div class="wrap">
+        <p class="label">(01) About</p>
+        <p class="statement-text" data-split>
+          Most businesses lose hours every week <em>re-typing</em> data, <em>chasing</em> signatures
+          and <em>searching</em> for stock numbers. I build the software that takes that work off
+          their hands.
         </p>
-
-        <div class="hero-ctas hero-in" style="--i:4">
-          <a class="btn btn-primary magnetic" href="#projects">See what I've built <span aria-hidden="true">→</span></a>
-          <a class="btn btn-ghost magnetic" href="#contact">Start a project</a>
-        </div>
-      </div>
-
-      <div class="container hero-foot hero-in" style="--i:5">
-        <span class="mono">Business systems · Websites · Android apps</span>
-        <a class="scroll-cue" href="#about" aria-label="Scroll to About">
-          <span class="mono">Scroll</span><span class="scroll-line" aria-hidden="true"></span>
-        </a>
       </div>
     </section>
 
-    <!-- STATEMENT (lights up as you scroll) -->
-    <section id="about" class="statement">
-      <div class="statement-sticky">
-        <div class="container">
-          <p class="kicker">01 / About</p>
-          <p class="statement-text" data-split>
-            Most businesses lose hours every week
-            <em>re-typing</em> data,
-            <em>chasing</em> signatures and
-            <em>searching</em> for stock numbers.
-            I build the software that takes that work off their hands.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- ABOUT DETAILS -->
-    <section class="section about">
-      <div class="container about-grid">
-        <div class="about-copy" data-reveal>
-          <h2 class="title">Studying engineering.<br><span class="grad-text">Shipping software.</span></h2>
-          <p>
-            I'm finishing a Diploma in Computer Engineering at MUST, but my real training has come
-            from companies with real deadlines. At Vision Fund Tanzania I moved item tracking and
-            department requests off paper and into a system I designed. At Flex Corporate Services
-            I built modules in Laravel and wrote the documentation for three of their systems.
-          </p>
-          <p>
-            Nyika Essence Safaris has worked with me since November 2025. I built their website and
-            the system that now produces their invoices and delivery notes, and I'm still the person
-            they call for both.
-          </p>
-          <p>
-            I work remotely from Arusha. Calls on Zoom, Meet or Teams, updates on Slack, and the
-            code on GitHub where you can see it.
-          </p>
+    <!-- ABOUT -->
+    <section class="section about theme-paper">
+      <div class="wrap">
+        <div class="about-grid">
+          <h2 class="title" data-reveal>Studying engineering. <em>Shipping software.</em></h2>
+          <div class="about-copy" data-reveal>
+            <p>
+              I'm finishing a Diploma in Computer Engineering at MUST, but my real training has come
+              from companies with real deadlines. At Vision Fund Tanzania I moved item tracking and
+              department requests off paper and into a system I designed. At Flex Corporate Services
+              I built modules in Laravel and wrote the documentation for three of their systems.
+            </p>
+            <p>
+              Nyika Essence Safaris has worked with me since November 2025. I built their website and
+              the system that now produces their invoices and delivery notes, and I'm still the person
+              they call for both.
+            </p>
+            <p>
+              I work remotely from Arusha. Calls on Zoom, Meet or Teams, updates on Slack, and the
+              code on GitHub where you can see it.
+            </p>
+          </div>
         </div>
 
-        <ul class="facts">
-          <li class="fact spot" data-reveal style="--d:.05s">
-            <span class="fact-k">Based in</span>
-            <span class="fact-v">Arusha, Tanzania</span>
-            <span class="fact-s">Working with clients remotely</span>
-          </li>
-          <li class="fact spot" data-reveal style="--d:.12s">
-            <span class="fact-k">Speciality</span>
-            <span class="fact-v">Business systems in Laravel &amp; Python</span>
-          </li>
-          <li class="fact spot" data-reveal style="--d:.19s">
-            <span class="fact-k">Studying</span>
-            <span class="fact-v">Diploma in Computer Engineering, MUST</span>
-            <span class="fact-s">Finishing July 2027</span>
-          </li>
-          <li class="fact spot" data-reveal style="--d:.26s">
-            <span class="fact-k">Open to</span>
-            <span class="fact-v">Freelance projects, remote roles, internships</span>
-          </li>
-        </ul>
-      </div>
-    </section>
+        <dl class="facts" data-reveal>
+          <div><dt class="mono">Based in</dt><dd>Arusha, Tanzania. Working with clients remotely.</dd></div>
+          <div><dt class="mono">Speciality</dt><dd>Business systems in Laravel and Python.</dd></div>
+          <div><dt class="mono">Studying</dt><dd>Diploma in Computer Engineering, MUST. Finishing July 2027.</dd></div>
+          <div><dt class="mono">Open to</dt><dd>Freelance projects, remote roles, internships.</dd></div>
+        </dl>
 
-    <!-- STATS -->
-    <section class="section stats-section" aria-label="Results">
-      <div class="container stats">
-        <div class="stat" data-reveal>
-          <span class="stat-num grad-text" data-count="80" data-suffix="%">80%</span>
-          <span class="stat-label">less time spent typing up invoices at Nyika Essence Safaris</span>
-        </div>
-        <div class="stat" data-reveal style="--d:.1s">
-          <span class="stat-num grad-text" data-count="1000" data-suffix="+">1,000+</span>
-          <span class="stat-label">people have installed my prayer app from Google Play</span>
-        </div>
-        <div class="stat" data-reveal style="--d:.2s">
-          <span class="stat-num grad-text" data-count="3">3</span>
-          <span class="stat-label">companies that have trusted me with their systems</span>
+        <div class="stats">
+          <div class="stat" data-reveal>
+            <span class="stat-num" data-count="80" data-suffix="%">80%</span>
+            <span class="stat-label">less time spent typing up invoices at Nyika Essence Safaris</span>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat-num" data-count="1000" data-suffix="+">1,000+</span>
+            <span class="stat-label">people have installed my prayer app from Google Play</span>
+          </div>
+          <div class="stat" data-reveal>
+            <span class="stat-num" data-count="3">3</span>
+            <span class="stat-label">companies that have trusted me with their systems</span>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- SERVICES -->
-    <section id="services" class="section">
-      <div class="container">
-        <p class="kicker" data-reveal>02 / Services</p>
-        <h2 class="title" data-reveal>What I can do <span class="grad-text">for you.</span></h2>
+    <section id="services" class="section theme-ink">
+      <div class="wrap">
+        <p class="label" data-reveal>(02) Services</p>
+        <h2 class="title" data-reveal>What I can do <em>for you.</em></h2>
 
         <div class="services">
-          <article class="service spot" data-reveal>
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><path d="M14 17.5h7M17.5 14v7"/></svg>
-            </span>
+          <article class="service" data-reveal>
+            <span class="mono service-n">01</span>
             <h3>Business systems</h3>
             <p>
               Inventory, invoicing, approvals, transactions. If your team keeps it in a spreadsheet,
               a notebook or a pile of forms, I can turn it into a system with proper logins, roles
               and a record of who did what.
             </p>
-            <p class="service-eg mono">Laravel · Python · MySQL</p>
+            <p class="mono service-tags">Laravel / Python / MySQL</p>
           </article>
-
-          <article class="service spot" data-reveal style="--d:.1s">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="2.5" y="4" width="19" height="16" rx="2.5"/><path d="M2.5 9h19"/><circle cx="6" cy="6.5" r=".6"/><circle cx="8.5" cy="6.5" r=".6"/></svg>
-            </span>
+          <article class="service" data-reveal>
+            <span class="mono service-n">02</span>
             <h3>Websites</h3>
             <p>
               Design, build, launch and hosting, all from one person. You don't have to coordinate a
               designer, a developer and a hosting company, and when something needs changing you
               know exactly who to call.
             </p>
-            <p class="service-eg mono">Web design · WordPress · Hosting</p>
+            <p class="mono service-tags">Web design / WordPress / Hosting</p>
           </article>
-
-          <article class="service spot" data-reveal style="--d:.2s">
-            <span class="service-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>
-            </span>
+          <article class="service" data-reveal>
+            <span class="mono service-n">03</span>
             <h3>Android apps</h3>
             <p>
               I build apps with web technology and ship them to Google Play as native Android apps
               with Capacitor. It's how I made Sala Za Kikatoliki, which has passed 1,000 installs and
               works with no internet connection.
             </p>
-            <p class="service-eg mono">JavaScript · Capacitor · Google Play</p>
+            <p class="mono service-tags">JavaScript / Capacitor / Google Play</p>
           </article>
         </div>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
-    <section id="experience" class="section">
-      <div class="container">
-        <p class="kicker" data-reveal>03 / Experience</p>
-        <h2 class="title" data-reveal>Where I've <span class="grad-text">delivered.</span></h2>
+    <section id="experience" class="section theme-paper">
+      <div class="wrap">
+        <p class="label" data-reveal>(03) Experience</p>
+        <h2 class="title" data-reveal>Where I've <em>delivered.</em></h2>
 
-        <div class="timeline-wrap">
-          <span class="timeline-track" aria-hidden="true"><span class="timeline-fill"></span></span>
-          <ol class="timeline">
-            <li class="job" data-reveal>
-              <span class="job-dot" aria-hidden="true"></span>
-              <div class="job-card spot">
-                <div class="job-head">
-                  <h3>Flex Corporate Services</h3>
-                  <span class="job-date mono">Aug 2026 – Oct 2026</span>
-                </div>
-                <p class="job-role">Field Student, Software Development</p>
-                <ul>
-                  <li>Joined the development team for a two-month placement and worked in Laravel every day.</li>
-                  <li>Built two modules for the company's systems: HireFlow and the transaction module.</li>
-                  <li>Wrote the system documentation for three systems, so the next developer or user can pick them up without starting from zero.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="job" data-reveal>
-              <span class="job-dot" aria-hidden="true"></span>
-              <div class="job-card spot">
-                <div class="job-head">
-                  <h3>Nyika Essence Safaris</h3>
-                  <span class="job-date mono">Nov 2025 – Present</span>
-                </div>
-                <p class="job-role">Web Developer &amp; Systems Consultant</p>
-                <ul>
-                  <li>Designed, built and launched <a href="https://nyikaessence.com" target="_blank" rel="noopener">nyikaessence.com</a>, the site travellers find when they look the company up.</li>
-                  <li>Built an invoice and delivery note system: upload an Excel or CSV file and the finished documents come out ready to send. Manual entry time dropped by more than 80%.</li>
-                  <li>Still their go-to person for the website and their systems.</li>
-                </ul>
-              </div>
-            </li>
-            <li class="job" data-reveal>
-              <span class="job-dot" aria-hidden="true"></span>
-              <div class="job-card spot">
-                <div class="job-head">
-                  <h3>Vision Fund Tanzania</h3>
-                  <span class="job-date mono">Jul 2025 – Sep 2025</span>
-                </div>
-                <p class="job-role">Software Development Trainee</p>
-                <ul>
-                  <li>Designed and built an inventory management system that took item tracking and department requests off paper.</li>
-                  <li>Added an approval workflow: department heads now review and authorise requests inside the system instead of signing forms.</li>
-                  <li>Worked with the IT team to keep the system secure and its data accurate.</li>
-                </ul>
-              </div>
-            </li>
-          </ol>
-        </div>
+        <ol class="jobs">
+          <li class="job" data-reveal>
+            <span class="mono job-date">Aug – Oct 2026</span>
+            <div class="job-head">
+              <h3>Flex Corporate Services</h3>
+              <p class="job-role">Field Student, Software Development</p>
+            </div>
+            <ul class="job-points">
+              <li>Joined the development team for a two-month placement and worked in Laravel every day.</li>
+              <li>Built two modules for the company's systems: HireFlow and the transaction module.</li>
+              <li>Wrote the system documentation for three systems, so the next developer or user can pick them up without starting from zero.</li>
+            </ul>
+          </li>
+          <li class="job" data-reveal>
+            <span class="mono job-date">Nov 2025 – Now</span>
+            <div class="job-head">
+              <h3>Nyika Essence Safaris</h3>
+              <p class="job-role">Web Developer &amp; Systems Consultant</p>
+            </div>
+            <ul class="job-points">
+              <li>Designed, built and launched <a href="https://nyikaessence.com" target="_blank" rel="noopener">nyikaessence.com</a>, the site travellers find when they look the company up.</li>
+              <li>Built an invoice and delivery note system: upload an Excel or CSV file and the finished documents come out ready to send. Manual entry time dropped by more than 80%.</li>
+              <li>Still their go-to person for the website and their systems.</li>
+            </ul>
+          </li>
+          <li class="job" data-reveal>
+            <span class="mono job-date">Jul – Sep 2025</span>
+            <div class="job-head">
+              <h3>Vision Fund Tanzania</h3>
+              <p class="job-role">Software Development Trainee</p>
+            </div>
+            <ul class="job-points">
+              <li>Designed and built an inventory management system that took item tracking and department requests off paper.</li>
+              <li>Added an approval workflow: department heads now review and authorise requests inside the system instead of signing forms.</li>
+              <li>Worked with the IT team to keep the system secure and its data accurate.</li>
+            </ul>
+          </li>
+        </ol>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container">
-        <p class="kicker" data-reveal>04 / Work</p>
-        <h2 class="title" data-reveal>Things I've <span class="grad-text">built.</span></h2>
+    <!-- WORK (scrolls sideways on large screens) -->
+    <section id="projects" class="work theme-ink">
+      <div class="wrap work-head">
+        <div>
+          <p class="label">(04) Work</p>
+          <h2 class="title">Things I've <em>built.</em></h2>
+        </div>
+        <p class="mono work-hint">Keep scrolling →</p>
+      </div>
 
-        <!-- Featured -->
-        <article class="feature spot" data-reveal>
-          <div class="feature-copy">
-            <span class="pill">Android app · Google Play</span>
-            <h3>Sala Za Kikatoliki</h3>
-            <p class="feature-lead">Catholic prayers in Swahili and English, in your pocket, even with no signal.</p>
-            <p>
-              I built it with HTML, CSS and JavaScript and turned it into a native Android app with
-              Capacitor. Every prayer works offline, so it's there when mobile data isn't. I've kept
-              improving it since launch: the latest release brought a redesigned interface, easier
-              navigation and daily prayer reminders.
-            </p>
-            <div class="feature-stats">
-              <div><strong data-count="1000" data-suffix="+">1,000+</strong><span>installs</span></div>
-              <div><strong>2</strong><span>languages</span></div>
-              <div><strong>Offline</strong><span>no data needed</span></div>
-            </div>
-            <ul class="tags"><li>JavaScript</li><li>Capacitor</li><li>Android</li></ul>
-            <div class="feature-links">
-              <a class="btn btn-primary magnetic" href="https://play.google.com/store/apps/details?id=com.salazakikatoliki.oraetlabora" target="_blank" rel="noopener">Open on Google Play ↗</a>
-              <a class="btn btn-ghost" href="https://github.com/anollian-mushi/sala-za-kikatoliki" target="_blank" rel="noopener">View code</a>
-            </div>
-          </div>
-
-          <div class="feature-visual" aria-hidden="true">
-            <div class="phone-glow"></div>
-            <div class="phone">
-              <div class="phone-island"></div>
-              <div class="phone-screen">
-                <div class="app-top">
-                  <span class="mono">06:00</span>
-                  <span class="app-dots"><i></i><i></i><i></i></span>
-                </div>
-                <div class="app-hero">
-                  <span class="app-cross">✝</span>
-                  <h4>Sala za Asubuhi</h4>
-                  <p>Morning prayers</p>
-                </div>
-                <ul class="app-list">
-                  <li><b>Baba Yetu</b><span>Our Father</span></li>
-                  <li><b>Salamu Maria</b><span>Hail Mary</span></li>
-                  <li><b>Atukuzwe Baba</b><span>Glory Be</span></li>
-                  <li><b>Nasadiki</b><span>The Creed</span></li>
-                </ul>
-                <div class="app-toast"><span class="pulse"></span>Daily reminder on</div>
+      <div class="work-viewport">
+        <div class="work-track">
+          <!-- Featured -->
+          <article class="panel panel-feature">
+            <div class="panel-copy">
+              <p class="mono panel-kicker">Android app · Google Play</p>
+              <h3>Sala Za Kikatoliki</h3>
+              <p class="panel-lead">Catholic prayers in Swahili and English, in your pocket, even with no signal.</p>
+              <p>
+                Built with HTML, CSS and JavaScript and turned into a native Android app with
+                Capacitor. Every prayer works offline, so it's there when mobile data isn't. The
+                latest release brought a redesigned interface, easier navigation and daily prayer
+                reminders.
+              </p>
+              <div class="panel-stats">
+                <div><strong>1,000+</strong><span class="mono">installs</span></div>
+                <div><strong>2</strong><span class="mono">languages</span></div>
+                <div><strong>0 MB</strong><span class="mono">data needed</span></div>
+              </div>
+              <div class="panel-links">
+                <a class="btn btn-solid magnetic" href="https://play.google.com/store/apps/details?id=com.salazakikatoliki.oraetlabora" target="_blank" rel="noopener">Google Play ↗</a>
+                <a class="btn btn-line" href="https://github.com/anollian-mushi/sala-za-kikatoliki" target="_blank" rel="noopener">View code</a>
               </div>
             </div>
-          </div>
-        </article>
+            <div class="panel-visual v-phone" aria-hidden="true">
+              <div class="phone">
+                <div class="phone-island"></div>
+                <div class="phone-screen">
+                  <div class="app-top"><span class="mono">06:00</span><span class="app-dots"><i></i><i></i><i></i></span></div>
+                  <div class="app-hero">
+                    <span class="app-cross">✝</span>
+                    <h4>Sala za Asubuhi</h4>
+                    <p>Morning prayers</p>
+                  </div>
+                  <ul class="app-list">
+                    <li><b>Baba Yetu</b><span>Our Father</span></li>
+                    <li><b>Salamu Maria</b><span>Hail Mary</span></li>
+                    <li><b>Atukuzwe Baba</b><span>Glory Be</span></li>
+                    <li><b>Nasadiki</b><span>The Creed</span></li>
+                  </ul>
+                  <div class="app-toast"><span class="dot"></span>Daily reminder on</div>
+                </div>
+              </div>
+            </div>
+          </article>
 
-        <!-- Grid -->
-        <div class="work-grid">
-          <article class="card spot" data-reveal>
-            <div class="card-visual v-inventory" aria-hidden="true">
+          <article class="panel">
+            <div class="panel-visual v-inventory" aria-hidden="true">
               <div class="dash">
-                <div class="dash-row"><span class="chip ok">In stock</span><span class="chip wait">Pending</span><span class="chip">Assets</span></div>
+                <div class="dash-row"><span class="chip">In stock</span><span class="chip">Pending</span><span class="chip">Assets</span></div>
                 <div class="bars"><i style="--h:42%"></i><i style="--h:68%"></i><i style="--h:55%"></i><i style="--h:84%"></i><i style="--h:63%"></i><i style="--h:92%"></i><i style="--h:74%"></i></div>
                 <div class="dash-approve"><span>Request from Finance</span><b>Approved ✓</b></div>
               </div>
             </div>
-            <div class="card-body">
+            <div class="panel-copy">
+              <p class="mono panel-kicker">Laravel · PHP · MySQL</p>
               <h3>Inventory &amp; Asset Management</h3>
-              <p class="card-lead">Know what you have, where it is, and who asked for it.</p>
-              <p>A Laravel system for stock and company assets. Each person sees only what their role allows, and nothing moves until a manager approves the request.</p>
-              <ul class="tags"><li>Laravel</li><li>PHP</li><li>MySQL</li></ul>
-              <a class="card-link" href="https://github.com/anollian-mushi/AnoDomino-inventory-system" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+              <p class="panel-lead">Know what you have, where it is, and who asked for it.</p>
+              <p>Each person sees only what their role allows, and nothing moves until a manager approves the request.</p>
+              <a class="panel-link" href="https://github.com/anollian-mushi/AnoDomino-inventory-system" target="_blank" rel="noopener">View code ↗</a>
             </div>
           </article>
 
-          <article class="card spot" data-reveal style="--d:.1s">
-            <div class="card-visual v-nyika" aria-hidden="true">
+          <article class="panel">
+            <div class="panel-visual v-nyika" aria-hidden="true">
               <div class="browser">
                 <div class="browser-bar"><i></i><i></i><i></i><span class="mono">nyikaessence.com</span></div>
                 <div class="scene">
@@ -375,84 +319,89 @@
                 </div>
               </div>
             </div>
-            <div class="card-body">
+            <div class="panel-copy">
+              <p class="mono panel-kicker">Web design · Hosting</p>
               <h3>Nyika Essence Safaris</h3>
-              <p class="card-lead">A safari company's first impression, online.</p>
+              <p class="panel-lead">A safari company's first impression, online.</p>
               <p>I designed, built and launched the site, and I host and look after it, so the team can focus on their guests instead of on servers.</p>
-              <ul class="tags"><li>Web design</li><li>Hosting</li></ul>
-              <a class="card-link" href="https://nyikaessence.com" target="_blank" rel="noopener">Visit the site <span aria-hidden="true">↗</span></a>
+              <a class="panel-link" href="https://nyikaessence.com" target="_blank" rel="noopener">Visit the site ↗</a>
             </div>
           </article>
 
-          <article class="card spot" data-reveal>
-            <div class="card-visual v-invoice" aria-hidden="true">
+          <article class="panel">
+            <div class="panel-visual v-invoice" aria-hidden="true">
               <div class="file"><span class="mono">.csv</span></div>
               <div class="flow"><i></i><i></i><i></i></div>
               <div class="doc">
-                <span class="doc-h mono">INVOICE</span>
+                <span class="doc-h mono">Invoice</span>
                 <span class="doc-l"></span><span class="doc-l short"></span><span class="doc-l"></span>
                 <span class="doc-total"></span>
               </div>
             </div>
-            <div class="card-body">
-              <h3>Invoice &amp; Delivery Note System</h3>
-              <p class="card-lead">From spreadsheet to finished invoice, without retyping.</p>
-              <p>Built in Python for Tuponi Investment. Staff get invoices and delivery notes generated for them instead of filling each one in by hand.</p>
-              <ul class="tags"><li>Python</li></ul>
-              <span class="card-link muted">Client project · private code</span>
+            <div class="panel-copy">
+              <p class="mono panel-kicker">Python · Client project</p>
+              <h3>Invoice &amp; Delivery Notes</h3>
+              <p class="panel-lead">From spreadsheet to finished invoice, without retyping.</p>
+              <p>Built for Tuponi Investment. Staff get invoices and delivery notes generated for them instead of filling each one in by hand.</p>
+              <span class="panel-link muted">Private code</span>
             </div>
           </article>
 
-          <article class="card spot" data-reveal style="--d:.1s">
-            <div class="card-visual v-hotel" aria-hidden="true">
+          <article class="panel">
+            <div class="panel-visual v-hotel" aria-hidden="true">
               <div class="rooms">
                 <i></i><i class="on"></i><i></i><i class="on"></i><i class="on"></i><i></i>
                 <i class="on"></i><i></i><i></i><i class="on"></i><i></i><i class="on"></i>
                 <i></i><i class="on"></i><i class="on"></i><i></i><i class="on"></i><i></i>
               </div>
             </div>
-            <div class="card-body">
+            <div class="panel-copy">
+              <p class="mono panel-kicker">PHP · MySQL</p>
               <h3>Hotel Management System</h3>
-              <p class="card-lead">Rooms and bookings in one place.</p>
-              <p>A hotel management system in PHP. The code is public, so you can read exactly how I write before we ever talk.</p>
-              <ul class="tags"><li>PHP</li><li>MySQL</li></ul>
-              <a class="card-link" href="https://github.com/anollian-mushi/hotel" target="_blank" rel="noopener">View code <span aria-hidden="true">↗</span></a>
+              <p class="panel-lead">Rooms and bookings in one place.</p>
+              <p>The code is public, so you can read exactly how I write before we ever talk.</p>
+              <a class="panel-link" href="https://github.com/anollian-mushi/hotel" target="_blank" rel="noopener">View code ↗</a>
             </div>
           </article>
-        </div>
 
-        <p class="more-note" data-reveal>
-          Not everything I build is public. I also have a pharmacy system and AnoTrade, a trading bot,
-          both in Python and both in private repositories. I'm happy to show either on a call.
-          Everything public is on <a href="https://github.com/anollian-mushi" target="_blank" rel="noopener">GitHub ↗</a>
-        </p>
+          <article class="panel panel-end">
+            <p class="mono panel-kicker">And more</p>
+            <p class="panel-end-text">
+              Not everything I build is public. There's also a pharmacy system and AnoTrade, a trading
+              bot, both in Python. Happy to show either on a call.
+            </p>
+            <a class="btn btn-solid magnetic" href="https://github.com/anollian-mushi" target="_blank" rel="noopener">Everything on GitHub ↗</a>
+          </article>
+        </div>
       </div>
+
+      <div class="wrap"><div class="work-progress" aria-hidden="true"><span></span></div></div>
     </section>
 
     <!-- PROCESS -->
-    <section id="process" class="section">
-      <div class="container">
-        <p class="kicker" data-reveal>05 / Process</p>
-        <h2 class="title" data-reveal>How we'd <span class="grad-text">work together.</span></h2>
+    <section id="process" class="section theme-paper">
+      <div class="wrap">
+        <p class="label" data-reveal>(05) Process</p>
+        <h2 class="title" data-reveal>How we'd <em>work together.</em></h2>
 
-        <ol class="process">
+        <ol class="steps">
           <li class="step" data-reveal>
-            <span class="step-num grad-text">01</span>
+            <span class="step-n">01</span>
             <h3>Understand</h3>
             <p>We start with how the work gets done today: who does it, where it gets stuck, and what that costs you. An hour of listening saves weeks of building the wrong thing.</p>
           </li>
-          <li class="step" data-reveal style="--d:.08s">
-            <span class="step-num grad-text">02</span>
+          <li class="step" data-reveal>
+            <span class="step-n">02</span>
             <h3>Build</h3>
             <p>I build in Laravel or Python and show you working pieces as I go. You see progress every step of the way, not one big reveal at the end.</p>
           </li>
-          <li class="step" data-reveal style="--d:.16s">
-            <span class="step-num grad-text">03</span>
+          <li class="step" data-reveal>
+            <span class="step-n">03</span>
             <h3>Launch</h3>
             <p>I set up hosting and put it live. For websites I can keep looking after things afterwards, the way I do for Nyika Essence Safaris.</p>
           </li>
-          <li class="step" data-reveal style="--d:.24s">
-            <span class="step-num grad-text">04</span>
+          <li class="step" data-reveal>
+            <span class="step-n">04</span>
             <h3>Hand over</h3>
             <p>You get written documentation, so your team understands the system and can keep working with it whether or not I'm around.</p>
           </li>
@@ -461,71 +410,43 @@
     </section>
 
     <!-- SKILLS -->
-    <section id="skills" class="section skills-section">
-      <div class="container">
-        <p class="kicker" data-reveal>06 / Skills</p>
-        <h2 class="title" data-reveal>The <span class="grad-text">toolkit.</span></h2>
+    <section id="skills" class="section skills theme-ink">
+      <div class="wrap">
+        <p class="label" data-reveal>(06) Skills</p>
+        <h2 class="title" data-reveal>The <em>toolkit.</em></h2>
       </div>
 
       <div class="marquee" aria-hidden="true">
         <div class="marquee-track">
-          <span>Laravel</span><b>✦</b><span class="outline">Python</span><b>✦</b><span>PHP</span><b>✦</b><span class="outline">JavaScript</span><b>✦</b><span>MySQL</span><b>✦</b><span class="outline">WordPress</span><b>✦</b><span>Capacitor</span><b>✦</b><span class="outline">Git</span><b>✦</b>
-          <span>Laravel</span><b>✦</b><span class="outline">Python</span><b>✦</b><span>PHP</span><b>✦</b><span class="outline">JavaScript</span><b>✦</b><span>MySQL</span><b>✦</b><span class="outline">WordPress</span><b>✦</b><span>Capacitor</span><b>✦</b><span class="outline">Git</span><b>✦</b>
-        </div>
-      </div>
-      <div class="marquee reverse" aria-hidden="true">
-        <div class="marquee-track">
-          <span class="outline">Inventory systems</span><b>✦</b><span>Invoicing</span><b>✦</b><span class="outline">Approval workflows</span><b>✦</b><span>Web design</span><b>✦</b><span class="outline">Hosting</span><b>✦</b><span>Android apps</span><b>✦</b>
-          <span class="outline">Inventory systems</span><b>✦</b><span>Invoicing</span><b>✦</b><span class="outline">Approval workflows</span><b>✦</b><span>Web design</span><b>✦</b><span class="outline">Hosting</span><b>✦</b><span>Android apps</span><b>✦</b>
+          <span>Laravel</span><i>/</i><span class="hollow">Python</span><i>/</i><span>PHP</span><i>/</i><span class="hollow">JavaScript</span><i>/</i><span>MySQL</span><i>/</i><span class="hollow">WordPress</span><i>/</i><span>Capacitor</span><i>/</i><span class="hollow">Git</span><i>/</i>
+          <span>Laravel</span><i>/</i><span class="hollow">Python</span><i>/</i><span>PHP</span><i>/</i><span class="hollow">JavaScript</span><i>/</i><span>MySQL</span><i>/</i><span class="hollow">WordPress</span><i>/</i><span>Capacitor</span><i>/</i><span class="hollow">Git</span><i>/</i>
         </div>
       </div>
 
-      <div class="container">
-        <div class="bento">
-          <div class="tile tile-wide spot" data-reveal>
-            <span class="tile-k">Languages</span>
-            <p class="tile-big">PHP, Python <span class="dim">&amp;</span> JavaScript</p>
-            <ul class="tags"><li>PHP</li><li>Python</li><li>JavaScript</li><li>HTML5</li><li>CSS3</li></ul>
-          </div>
-          <div class="tile tile-tall spot" data-reveal style="--d:.08s">
-            <span class="tile-k">Frameworks &amp; CMS</span>
-            <p class="tile-big grad-text">Laravel</p>
-            <p class="tile-text">My main tool for business systems. Inventory, approvals, transactions and HireFlow were all built on it.</p>
-            <ul class="tags"><li>WordPress</li><li>Capacitor</li></ul>
-          </div>
-          <div class="tile spot" data-reveal style="--d:.12s">
-            <span class="tile-k">Tools &amp; databases</span>
-            <ul class="tags"><li>Git &amp; GitHub</li><li>MySQL</li><li>Advanced Excel (certified)</li></ul>
-          </div>
-          <div class="tile spot" data-reveal style="--d:.16s">
-            <span class="tile-k">Systems</span>
-            <p class="tile-mid">macOS <span class="dim">/</span> Linux</p>
-          </div>
-          <div class="tile spot" data-reveal style="--d:.2s">
-            <span class="tile-k">Remote work</span>
-            <ul class="tags"><li>Zoom</li><li>Google Meet</li><li>Microsoft Teams</li><li>Slack</li></ul>
-          </div>
-          <div class="tile spot" data-reveal style="--d:.24s">
-            <span class="tile-k">Documentation</span>
-            <p class="tile-text">Software only helps if people know how to use it. I've written the documentation for three systems at Flex Corporate Services.</p>
-          </div>
-        </div>
+      <div class="wrap">
+        <dl class="spec">
+          <div data-reveal><dt class="mono">Languages</dt><dd>PHP, Python, JavaScript, HTML5, CSS3</dd></div>
+          <div data-reveal><dt class="mono">Frameworks &amp; CMS</dt><dd>Laravel (my main tool for business systems), WordPress, Capacitor</dd></div>
+          <div data-reveal><dt class="mono">Tools &amp; databases</dt><dd>Git and GitHub, MySQL, Advanced Excel (certified)</dd></div>
+          <div data-reveal><dt class="mono">Systems</dt><dd>macOS, Linux</dd></div>
+          <div data-reveal><dt class="mono">Remote work</dt><dd>Zoom, Google Meet, Microsoft Teams, Slack</dd></div>
+          <div data-reveal><dt class="mono">Documentation</dt><dd>System documentation for three systems at Flex Corporate Services. Software only helps if people know how to use it.</dd></div>
+        </dl>
       </div>
     </section>
 
     <!-- EDUCATION -->
-    <section id="education" class="section">
-      <div class="container">
-        <p class="kicker" data-reveal>07 / Education</p>
-        <h2 class="title" data-reveal>Always <span class="grad-text">learning.</span></h2>
+    <section id="education" class="section education theme-paper">
+      <div class="wrap">
+        <p class="label" data-reveal>(07) Education</p>
         <div class="edu">
-          <div class="edu-card spot" data-reveal>
-            <span class="edu-year mono">2027</span>
+          <div class="edu-row" data-reveal>
+            <span class="mono">2027</span>
             <h3>Diploma in Computer Engineering</h3>
             <p>Mbeya University of Science and Technology (MUST). Finishing July 2027, with two field placements already done along the way.</p>
           </div>
-          <div class="edu-card spot" data-reveal style="--d:.1s">
-            <span class="edu-year mono">Cert</span>
+          <div class="edu-row" data-reveal>
+            <span class="mono">Cert</span>
             <h3>Advanced Excel Certification</h3>
             <p>Silabu. Handy when the system I'm replacing is a spreadsheet, which it often is.</p>
           </div>
@@ -534,38 +455,43 @@
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="contact">
-      <div class="contact-glow" aria-hidden="true"></div>
-      <div class="container">
-        <p class="kicker" data-reveal>08 / Contact</p>
-        <h2 class="contact-title" data-reveal>Let's build<br><span class="grad-text shimmer">something great.</span></h2>
-        <p class="contact-sub" data-reveal>
-          Tell me what's slowing your business down, whether it's a spreadsheet nobody trusts, a
-          process that lives on paper, or a website that needs a fresh start. I'll reply with how
-          I'd approach it.
-        </p>
-        <div class="contact-actions" data-reveal>
-          <a class="btn btn-primary btn-xl magnetic" href="mailto:anollianmushi005@gmail.com">anollianmushi005@gmail.com</a>
-          <button class="btn btn-ghost copy-btn" type="button" data-copy="anollianmushi005@gmail.com">Copy email</button>
+    <section id="contact" class="contact theme-ink">
+      <div class="wrap">
+        <p class="label">(08) Contact</p>
+        <h2 class="contact-title">Let's build <em>something great.</em></h2>
+        <div class="contact-row">
+          <p class="contact-sub">
+            Tell me what's slowing your business down, whether it's a spreadsheet nobody trusts, a
+            process that lives on paper, or a website that needs a fresh start. I'll reply with how
+            I'd approach it.
+          </p>
+          <div class="contact-actions">
+            <a class="btn btn-solid btn-big magnetic" href="mailto:anollianmushi005@gmail.com">anollianmushi005@gmail.com</a>
+            <button class="btn btn-line copy-btn" type="button" data-copy="anollianmushi005@gmail.com">Copy email</button>
+          </div>
         </div>
-        <ul class="socials" data-reveal>
-          <li><a href="https://www.linkedin.com/in/anollian-mushi-9a1375228" target="_blank" rel="noopener">LinkedIn <span aria-hidden="true">↗</span></a></li>
-          <li><a href="https://github.com/anollian-mushi" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
-          <li><a href="https://play.google.com/store/apps/details?id=com.salazakikatoliki.oraetlabora" target="_blank" rel="noopener">Google Play <span aria-hidden="true">↗</span></a></li>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/in/anollian-mushi-9a1375228" target="_blank" rel="noopener">LinkedIn ↗</a></li>
+          <li><a href="https://github.com/anollian-mushi" target="_blank" rel="noopener">GitHub ↗</a></li>
+          <li><a href="https://play.google.com/store/apps/details?id=com.salazakikatoliki.oraetlabora" target="_blank" rel="noopener">Google Play ↗</a></li>
         </ul>
       </div>
     </section>
   </main>
 
-  <footer class="footer">
-    <div class="container footer-inner">
-      <p>© <span id="year">2026</span> Anollian Emillian Mushi · Built in Arusha</p>
-      <a href="#top">Back to top ↑</a>
+  <footer class="footer theme-ink">
+    <div class="wrap footer-inner">
+      <p class="mono">© <span id="year">2026</span> Anollian Emillian Mushi</p>
+      <p class="mono">Built in Arusha</p>
+      <a class="mono" href="#top">Back to top ↑</a>
     </div>
   </footer>
 
-  <div class="toast" role="status" aria-live="polite"></div>
+  <div class="toast mono" role="status" aria-live="polite"></div>
 
-  <script src="script.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script defer src="script.js"></script>
+  <script type="module" src="hero3d.js"></script>
 </body>
 </html>
