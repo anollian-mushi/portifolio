@@ -22,7 +22,7 @@ For Nyika Essence Safaris I built and launched [nyikaessence.com](https://nyikae
 
 ## Selected projects
 
-- **[Sala Za Kikatoliki](https://play.google.com/store/apps/details?id=com.salazakikatoliki.oraetlabora)**: Catholic prayers in Swahili and English that work offline. Built with HTML, CSS and JavaScript and packaged for Android with Capacitor. 1,000+ downloads on Google Play. ([code](https://github.com/anollian-mushi/sala-za-kikatoliki))
+- **[Sala Za Kikatoliki](https://play.google.com/store/apps/details?id=com.salazakikatoliki.oraetlabora)**: Catholic prayers in Swahili and English that work offline. Built with HTML, CSS and JavaScript and packaged for Android with Capacitor. 10,000+ downloads on Google Play. ([code](https://github.com/anollian-mushi/sala-za-kikatoliki))
 - **[Inventory & Asset Management System](https://github.com/anollian-mushi/AnoDomino-inventory-system)**: a Laravel app with role-based access, stock tracking and approvals.
 - **[Hotel Management System](https://github.com/anollian-mushi/hotel)**: written in PHP.
 - **Invoice & Delivery Note System**: a Python web app for Tuponi Investment that generates invoices and delivery notes. Client project, code not public.
